@@ -28,10 +28,11 @@ module.exports.showListing = async (req, res) =>{
     }
     console.log(listing);
     //res.render("listings/show.ejs",{listing});
-    res.render("listings/show.ejs", {
-    listing,
-    mapToken: process.env.MAP_TOKEN   
-});
+
+    res.render("listings/show", { listing, mapToken: process.env.MAP_TOKEN });
+
+   // <-- Ye add karna hai
+
 
 
 };
