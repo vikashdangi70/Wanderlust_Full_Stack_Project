@@ -10,9 +10,6 @@ body{
     flex: 1;
 }
 
-
-
-
 /* Navbar */
 
 .navbar{
@@ -76,6 +73,7 @@ body{
 .card-img-top{
     border-radius: 1rem !important;
     width: 100% !important;
+    height: auto !important;
     object-fit: cover !important;
 }
 .card-body{
@@ -143,7 +141,10 @@ body{
 
 .show-img{
  
-    height: 30vh;
+    height: auto;
+    width : 100%;
+    object-fit: cover ;
+    border-radius: 5px;
 }
 
 .btns{
