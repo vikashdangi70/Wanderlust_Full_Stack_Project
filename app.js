@@ -92,6 +92,17 @@ app.use(flash());
 app.use(passport.initialize());  //initialize passport before use
 app.use(passport.session());
 
+// ==============================
+
+app.use((req, res, next) => {
+  res.locals.currUser = req.user || null;
+  next();
+});
+// ==============================
+
+
+
+
 passport.use(new LocalStrategy(User.authenticate()));
 
 
